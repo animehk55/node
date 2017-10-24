@@ -1,0 +1,238 @@
+node index.js 			/ run the server
+
+heroku -v			/ heroku version details
+
+npm init 			/ press four times enter for getting package.json file
+
+npm install --save express 	/for installation of node modules of express
+
+node -v 			/ version of node
+
+npm -v 				/ version of npm 
+
+git --version 			/ version of git
+
+git init 			/ initialisation of git repository
+
+git add .			/ warning: LF will be replaced by CRLF in package-lock.json.
+				The file will have its original line endings in your working directory.
+				warning: LF will be replaced by CRLF in package.json.
+				The file will have its original line endings in your working directory.
+
+git commit -m "initial commit"	/ will commit all the changes done
+
+heroku login 			/ login into heroku account using cmd
+
+heroku create			/ create heroku files using cmd and it will give :
+					Creating app... done, limitless-dusk-25166
+				https://limitless-dusk-25166.herokuapp.com/ | https://git.heroku.com/limitless-dusk-25166.git
+
+
+git remote add heroku https://git.heroku.com/limitless-dusk-25166.git
+				/ fatal: remote heroku already exists.
+
+git push heroku master		/ push the command into heroku
+
+heroku open 			/ open in new browser tab, contents of atom file
+
+heroku logs			/ details of commited code
+
+git status 			/ detaisl of changes done
+
+git add .
+
+git commit -m "changed greeting"	/new chages done to be commited again
+
+git push heroku master
+
+heroku logs
+
+heroku open
+
+npm install --save passport-google-oauth20	
+				install passport authonticaion file
+
+https://console.developers.google.com		/ google auth verification account
+						/ Create API
+							Create Credentials
+								Create client ID
+									Configure Consent Screen / verifivation page for user
+										Product Name -DiwaliServer : SAVE
+											Application Type : Web Application
+											1> Authorized JavaScript origins : http://localhost:5000
+											2> Authorized redirect URIs	 : http://localhost:5000/*
+												OAuth client : Get ClientId and ClientSecret
+												ClientID :  Public token - we can share this with the public
+												ClientSecret : Private token - we don't want anyone to see this.
+						/Error: Cannot find module 'passport'
+							npm install passport
+								
+						/400. That’s an error. Error: redirect_uri_mismatch
+							2> Authorized redirect URIs	 : http://localhost:5000/auth/google/callback
+						/visit in browser : localhost:5000/auth/google
+
+						/on clicking on email Id on browser: Cannot GET /auth/google/callback
+						Resolve by corresction in index.js : app.get('/auth/google/callback', passport.authenticate('google'));
+
+						after writing index.js serving is hanging in localhost/auth/google and in cmd following codes is generated
+									node index.js
+									access token ya29.GlvoBNNwz5AVqU_-Lu64bUNIx-Sawvna2HXVQSbYpGZbJd_k6NZgmurJ-objXAWhDuWReysfURsdLmxe4U0NDygyWGFMiCmkQgywRgHfHFSQ-olBSfnH7VquIp1J
+									refresh token undefined
+									profile: { id: '105231007519034388557',
+									  displayName: 'Animesh Kumar',
+									  name: { familyName: 'Kumar', givenName: 'Animesh' },
+									  emails: [ { value: 'animeshk55@gmail.com', type: 'account' } ],
+									  photos:
+									   [ { value: 'https://lh4.googleusercontent.com/-LzGicg8345o/AAAAAAAAAAI/AAAAAAAAAF8/km5YJrHMGvg/photo.jpg?sz=50' } ],
+									  gender: 'male',
+									  provider: 'google',
+									  _raw: '{\n "kind": "plus#person",\n "etag": "\\"Sh4n9u6EtD24TM0RmWv7jTXojqc/NcKOHbVpCjz8tWmPfvfKPvP0R-8\\"",\n "nickname": "SMILE ONLY . . forever",\n "occupation": "MATHMATICS",\n "gender": "male",\n "emails": [\n  {\n   "value": "animeshk55@gmail.com",\n   "type": "account"\n  }\n ],\n "objectType": "person",\n "id": "105231007519034388557",\n "displayName": "Animesh Kumar",\n "name": {\n  "familyName": "Kumar",\n  "givenName": "Animesh"\n },\n "tagline": "Gain more and more KNOWLEDGE in every field . . !",\n "url": "https://plus.google.com/105231007519034388557",\n "image": {\n  "url": "https://lh4.googleusercontent.com/-LzGicg8345o/AAAAAAAAAAI/AAAAAAAAAF8/km5YJrHMGvg/photo.jpg?sz=50",\n  "isDefault": false\n },\n "organizations": [\n  {\n   "name": "SMILE ONLY . . forever",\n   "title": "MATHMATICS",\n   "type": "work",\n   "primary": false\n  }\n ],\n "placesLived": [\n  {\n   "value": "INDIA"\n  },\n  {\n   "value": "RANCHI"\n  },\n  {\n   "value": "JHARKHAND"\n  }\n ],\n "isPlusUser": true,\									n "language": "en",\n "circledByCount": 20,\n "verified": false,\n "cover": {\n  "layout": "banner",\n  "coverPhoto": {\n   "url": "https://lh3.googleusercontent.com/kV7yRrWgiz1AXDR4z8FWGhQL-XmwVrRg2hVtTpFLpU8si3_wXx7iVEIJx3bCfUk2ryfFTkHrW30=s630",\n   "height": 626,\n   "width": 940\n  },\n  "coverInfo": {\n   "topImageOffset": -242,\n   "leftImageOffset": 0\n  }\n }\n}\n',
+									  _json:
+									   { kind: 'plus#person',
+									     etag: '"Sh4n9u6EtD24TM0RmWv7jTXojqc/NcKOHbVpCjz8tWmPfvfKPvP0R-8"',
+									     nickname: 'SMILE ONLY . . forever',
+									     occupation: 'MATHMATICS',
+									     gender: 'male',
+									     emails: [ [Object] ],
+									     objectType: 'person',
+									     id: '105231007519034388557',
+									     displayName: 'Animesh Kumar',
+									     name: { familyName: 'Kumar', givenName: 'Animesh' },
+									     tagline: 'Gain more and more KNOWLEDGE in every field . . !',
+									     url: 'https://plus.google.com/105231007519034388557',
+									     image:
+									      { url: 'https://lh4.googleusercontent.com/-LzGicg8345o/AAAAAAAAAAI/AAAAAAAAAF8/km5YJrHMGvg/photo.jpg?sz=50',
+									        isDefault: false },
+									    organizations: [ [Object] ],
+									     placesLived: [ [Object], [Object], [Object] ],
+									     isPlusUser: true,
+									     language: 'en',
+									     circledByCount: 20,
+									     verified: false,
+									     cover: { layout: 'banner', coverPhoto: [Object], coverInfo: [Object] } } }
+									TokenError: Code was already redeemed.
+									    at Strategy.OAuth2Strategy.parseErrorResponse (E:\Custumer Care\diwaliNode\node_modules\passport-oauth2\lib\strategy.js:329:12)
+									    at Strategy.OAuth2Strategy._createOAuthError (E:\Custumer Care\diwaliNode\node_modules\passport-oauth2\lib\strategy.js:376:16)
+									    at E:\Custumer Care\diwaliNode\node_modules\passport-oauth2\lib\strategy.js:166:45
+									    at E:\Custumer Care\diwaliNode\node_modules\oauth\lib\oauth2.js:191:18
+									    at passBackControl (E:\Custumer Care\diwaliNode\node_modules\oauth\lib\oauth2.js:132:9)
+									    at IncomingMessage.<anonymous> (E:\Custumer Care\diwaliNode\node_modules\oauth\lib\oauth2.js:157:7)
+									    at emitNone (events.js:110:20)
+									    at IncomingMessage.emit (events.js:207:7)
+									    at endReadableNT (_stream_readable.js:1057:12)
+									    at _combinedTickCallback (internal/process/next_tick.js:138:11)		
+
+						/ no need to run index.js file again and again by : npm install --save nodemon
+
+
+						/http is stateless and ajax too
+
+						//mlab.com for mongoDB database creation 
+						// npm install --save mongoose
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
