@@ -1,0 +1,29 @@
+{
+  "name": "mis",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apeman-react-slideshow": "^2.0.8",
+    "react": "^15.6.2",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^15.6.2",
+    "react-google-maps": "^8.3.0",
+    "react-image-slideshow": "^1.5.2",
+    "react-placeholder": "^1.0.6",
+    "react-portal": "^3.1.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-splitter-layout": "^0.2.1",
+    "tween.js": "^16.6.0"
+  },
+  "devDependencies": {
+    "react-responsive-select": "^3.0.2",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

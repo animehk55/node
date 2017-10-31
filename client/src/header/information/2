@@ -1,0 +1,61 @@
+import React, { Component } from 'react';
+//import logo from './logo.svg';
+//import './App.css';
+
+class Login_ extends Component {
+  render() {
+    return (
+      <div>
+
+
+                      <br />
+                      <br /	>
+                      <br />
+                      <br /	>
+                          	<section>
+                          		<form>
+                          			<fieldset>
+                          				<legend><b>Login</b></legend>
+                          					<table>
+                          						<tr>
+                          							<td>User Name</td>
+                          							<td><input type="text"/></td>
+                          						</tr>
+                          						<tr>
+                                                  <td></td>
+                                                  <td></td>
+                                                  </tr>
+                                                  <tr>
+                          							<td>Password</td>
+                          							<td><input type="password" /></td>
+                          						</tr>
+                                                  <tr>
+                                                  <td></td>
+                                                  <td></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><button className="btn-register">Sign In</button></td>
+                                                      <td><button className="btn-reset">Reset</button></td>
+                                                  </tr>
+                      	   					</table>
+                          			</fieldset>
+                          		</form>
+                              <form>
+  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
+  <input type="submit" value="Submit" />
+</form>
+                          	</section>
+                      			<br />
+                      			<br /	>
+                      			<br />
+                      			<br /	>
+
+                          </div>
+        );
+  }
+}
+
+export default Login_;

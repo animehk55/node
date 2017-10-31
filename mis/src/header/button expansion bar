@@ -1,0 +1,11 @@
+<div>
+<select>
+  <option value="L">Login</option>
+  <option value="A">Administrator Login</option>
+  <option value="C">Citizen Login</option>
+</select>
+</div>
+<select onChange="window.location.href=this.value">
+<option value="www.google.com">A</option>
+<option value="www.aol.com">B</option>
+</select>
