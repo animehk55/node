@@ -1,0 +1,3 @@
+--require test/helpers
+    --reporter spec
+    --timeout 120000
