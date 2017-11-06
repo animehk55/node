@@ -5,10 +5,10 @@
   "proxy": {
     "/auth/google": {
       "target": "http://localhost:5000"
+    },
+    "/api/*": {
+      "target": "http://localhost:5000"
     }
-  },
-  "/api/*": {
-    "target": "http://localhost:5000"
   },
   "dependencies": {
     "apeman-react-slideshow": "^2.0.8",
