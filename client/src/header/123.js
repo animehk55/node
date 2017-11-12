@@ -16,16 +16,11 @@ import "react-placeholder/lib/reactPlaceholder.css";
 //  Link
 // }from 'react-router-dom';
 
-import Header from './Header';
-import HeaderHome from './header_Home';
-import Landing from './Landing';
-import LoggedOT from './LoggOutPage';
+import header from './header';
+const Dashboard = () => <h2>Dashboard</h2>;
+const SurveyNew = () => <h2>SurveyNew</h2>;
+const Landing = () => <h2>Landing</h2>;
 
-//
-// const LoggggggIN = () => <h2>Not logged in now, Please login</h2>;
-// const HomeHome = () => <h2>U are in home page</h2>;
-// const LogggggedOUT = () => <h2>U are logged out now</h2>;
-//
 
 class HeaderInfo extends Component {
   componentDidMount() {
@@ -34,12 +29,12 @@ class HeaderInfo extends Component {
   render() {
     return (
       <div>
-      {/* <div className="App">
+      <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Missing Vehicle</h2>
         </div>
-        </div> */}
+        </div>
       <div className="area">
       {/* <ul>
       <li><a href="/auth/google">SIGN-IN with Goooooooogle</a></li>
@@ -47,15 +42,16 @@ class HeaderInfo extends Component {
       <div>
         <BrowserRouter>
           <div>
-            <Header />
+            <header />
             <Route exact path="/" component={Landing} />
-            <Route exact path="/mainPAge" component={HeaderHome} />
-            <Route path="/LoggedOut" component={LoggedOT} />
+            <Route exact path="/homeLoggedIN" component={Dashboard} />
+            <Route path="/LoggedOut" component={Dashboard} />
           </div>
         </BrowserRouter>
       </div>
       </div>
     </div>
+
     );
   }
 }

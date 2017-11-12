@@ -28,9 +28,9 @@ import './App.css';
 
 
 class App extends Component {
-  componentDidMount() {
-    this.props.fetchUser();
-  }
+  // componentDidMount() {
+  //   this.props.fetchUser();
+  // }
 
   render() {
     return (
@@ -42,7 +42,7 @@ class App extends Component {
 <div>
 <Route exact path="/HOME_" component={ Home }/>
 <Route exact path="/ABOUT US_" component={ AboutUs }/>
-<Route exact path="/LOGIN_" component={ Login }/>
+{/*<Route exact path="/LOGIN_" component={ Login }/>*/}
 <Route exact path="/FOUND VEHICLE_" component={ FoundVehicle }/>
 <Route exact path="/LOSTVEHICLE_" component={ LostVehicle }/>
 <Route exact path="/INFORMATION_" component={ Information }/>

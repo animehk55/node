@@ -52,9 +52,6 @@ class ContactUs extends Component {
                           </section>
 
                             </div>
-
-
-
                 </div>
                 </div>
                 </div>
@@ -110,7 +107,7 @@ class ContactUs extends Component {
                 </div>
               </div>
 
-              
+
                 </div>
       </div>
 

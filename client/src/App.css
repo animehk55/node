@@ -93,7 +93,8 @@ li.dropdown {
 .searchbar_{
   position: absolute;
    left: 900px;
-   top: 204px;
+   top: 150px;
+   color: white;
 }
 .searchbar__{
   position: absolute;
@@ -190,8 +191,18 @@ li.dropdown {
 }
 
 /*FAQ*/
+.color{
+  background: -webkit-linear-gradient(#9B38B2, #1B75BB,#3524F0, #9B38B2, #3524F0, #1B75BB, #3524F0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.center{
+  text-align: center;
+}
 .FAQ-F {
-  margin-left: 2cm;
+  margin-top: 1cm;
+  margin-left: 4cm;
+  margin-right: 4cm;
   }
 .FAQ-P {
   margin-left: 0;
@@ -239,3 +250,55 @@ li.dropdown {
       height: 300px;
       margin-left: 0cm;
   }
+
+/*lost_Vehiicle*/
+.tab{
+  margin-top: 2cm;
+  margin-left: 7cm;
+  margin-right: 12cm;
+}
+.PrivacyPolicy{
+  margin-top: 4cm;
+  margin-left: 12cm;
+  margin-right: 12cm;
+  text-align: center;
+  font-size: 18px;
+  background: -webkit-linear-gradient(#00ff00, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  line-height: 500px;
+}
+/*Missing Vehicle*/
+.MissingVehicle{
+  margin-left: 12cm;
+  margin-right: 12cm;
+  text-align: center;
+  font-size: 18px;
+  background: -webkit-linear-gradient(#00ff00, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  line-height: 50px;
+}
+.MissingVehicleTAB{
+  margin-top: 2cm;
+  text-align: center;
+}
+/*Information*/
+.InfoSlider{
+  height: 200px;
+ line-height: 20px;
+ min-width: 147px;
+ overflow: hidden;
+ position: relative;
+ width: 10%;
+ text-align: center;
+ border: 3px solid orange;
+ margin-left: 2cm;
+
+
+}
+.TopLogin{
+  margin-top: 2cm;
+}

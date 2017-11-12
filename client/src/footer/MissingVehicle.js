@@ -15,8 +15,9 @@ class MissingVehicle extends Component {
 
   render() {
     return (
-      <div>
-      <div>Missing Vehicle</div>
+      <div className="MissingVehicleTAB">
+        <h3>Privacy Policy</h3>
+      <div className="MissingVehicle">Clients and associates of SoftInd Solutions LLP may download pages or other content for their own use, consistent with the mission and purpose of SoftInd Solutions LLP, on a single computer. However, no part of such content may be otherwise or subsequently reproduced, downloaded, disseminated, published, or transferred, in any form or by any means, except with the prior written permission of, and with express attribution to SoftInd Solutions LLP. </div>
       </div>
     );
   }
