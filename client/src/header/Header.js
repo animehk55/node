@@ -20,10 +20,15 @@ class Header extends Component {
       case false:
       return <li><a href="/auth/google">Login With Google</a></li>;
       default:
-      return [
-        <li><Payments /></li>,
-        <li><a href="/api/logout">Logout</a></li>
-      ];
+      return (
+        <div>
+          <li key="1"><Payments /></li>,
+          <li key="3" style={{ margin: '0 10px' }}>
+            Credits: {this.props.auth.credits}
+          </li>,
+          <li key="2"><a href="/api/logout">Logout</a></li>
+        </div>
+      );
     }
   }
   constructor(props) {
