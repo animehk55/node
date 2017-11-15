@@ -23,6 +23,7 @@ import FAQs from './footer/FAQ';
 import MissingVehicle from './footer/legalNotice';
 import PrivacyPolicy from './footer/MissingVehicle';
 import LegalNotice from './footer/PrivacyPolicy';
+import Landing from './header/Landing';
 
 import './App.css';
 
@@ -52,7 +53,7 @@ class App extends Component {
 <Route exact path="/PRIVACY_POLICY_" component={ PrivacyPolicy }/>
 <Route exact path="/MISSING_VEHICLE_" component={ MissingVehicle }/>
 <Route exact path="/FOUND_VEHICLE_" component={ FoundVehicle }/>
-
+<Route exact path="/header/Landing" component={ Landing }/>
 </div>
 </Router>
       <div>
