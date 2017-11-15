@@ -39,7 +39,11 @@
     "react-responsive-select": "^3.0.2",
     "react-scripts": "1.0.13"
   },
-    "scripts": {
+  "devDependencies": {
+    "react-responsive-select": "^3.0.2",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
