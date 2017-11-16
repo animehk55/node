@@ -21,10 +21,8 @@
     "appdynamics": "^4.3.5",
     "axios": "^0.17.0",
     "bootstrap": "^4.0.0-beta",
-    "build": "react-scripts build",
     "concurrently": "^3.5.0",
     "cookie-session": "^2.0.0-beta.3",
-    "eject": "react-scripts eject",
     "express": "4.16.2",
     "marquee-react-dwyer": "^4.0.2",
     "materialize-css": "^0.100.2",
@@ -52,9 +50,7 @@
     "redux": "^3.7.2",
     "redux-form": "^7.1.2",
     "redux-thunk": "^2.2.0",
-    "start": "react-scripts start",
     "stripe": "^5.3.0",
-    "test": "react-scripts test --env=jsdom",
     "tween.js": "^16.6.0"
   }
 }
